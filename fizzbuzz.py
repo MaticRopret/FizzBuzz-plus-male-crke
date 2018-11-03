@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*- #
+name = raw_input("Enter your name: ")
 
 number = int ( raw_input ( "Pick a number between 1 and 100: ") )
 print number
-
 
 for x in range ( 1, number ):
     if x % 3 == 0 and x % 5 == 0:
@@ -14,4 +14,4 @@ for x in range ( 1, number ):
     else:
         print x
 
-print "THANKS FOR YOUR TIME".lower()
+print "THANKS FOR YOUR TIME ".lower() + name.lower() + "!"
